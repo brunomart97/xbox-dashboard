@@ -4,6 +4,8 @@ import { SiXbox } from 'react-icons/si';
 import { RiHome8Line, RiStore2Line, RiUserVoiceLine } from 'react-icons/ri';
 import { BiJoystick, BiMessageSquareDetail } from 'react-icons/bi';
 
+import cardFooter from '../../img/cardFooter.svg'
+
 export default function Sidebar() {
     return(
         <sidebar className="sidebar">
@@ -24,7 +26,7 @@ export default function Sidebar() {
             <div className="cardFooter">
                 <h3>Cyber Week Sale</h3>
                 <p>Up to 55% off select digital games</p>
-                <img src="/img/cardFooter.svg" alt="Cyber Week Sale"/>
+                <img src={cardFooter} alt="Cyber Week Sale"/>
                 <button>View</button>
             </div>
         </sidebar>
