@@ -2,9 +2,9 @@ import './styles.scss';
 
 import forzaImage from '../../img/forza.png';
 
-export default function Content() {
+export default function Content({ darkTheme }) {
     return(
-        <main className="content">
+        <main className={`content ${darkTheme && 'dark'}`}>
             <div className="top">
                 <div className="news">
                     <h3>News</h3>

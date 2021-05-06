@@ -4,18 +4,58 @@
     justify-content: space-between;
     align-items: center;
     padding: 40px;
+    background-color: #EEEEEE;
+
+    &.dark {
+        background-color: #20232C;
+    }
 
     h1 {
         font-size: 25px;
         font-weight: 500;
-        color: #fff;
+        color: #000;
+
+        &.dark {
+            color: #fff;
+        }
     }
 
     .rightSide {
-        width: 410px;
+        width: 460px;
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        .darkLightBtn {
+            width: 35px;
+            height: 35px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: none;
+            cursor: pointer;
+            border-radius: 50%;
+            background-color: #fff;
+
+            svg {
+                width: 23px;
+                height: 23px;
+                color: #2A2A34;
+                
+                &:hover {
+                    color: #2A2A34;
+                }
+            }
+            
+            &.dark {
+                background-color: #2A2A34;
+
+                svg {
+                    color: #fff;
+                }
+            }
+
+        }
 
         .searchBox {
             width: 290px;
@@ -25,8 +65,12 @@
             align-items: center;
             padding: 0 15px;
             border-radius: 25px;
-            background-color: #2A2A34;
+            background-color: #fff;
             color: #7C828A;
+
+            &.dark {
+                background-color: #2A2A34;
+            }
 
             input {
                 width: 90%;
@@ -35,17 +79,17 @@
                 font-size: 15px;
                 background: none;
                 border: none;
-                color: #fff;
                 outline: none;
+                color: #000;
+                
+                &.dark {
+                    color: #fff;
+                }
             }
 
             svg {
                 width: 20px;
                 height: 20px;
-
-                &:hover {
-                    color: #fff;
-                }
             }
         }
 
@@ -54,10 +98,6 @@
             height: 20px;
             color: #7C828A;
             cursor: pointer;
-
-            &:hover {
-                color: #fff;
-            }
         }
 
         .login {
@@ -66,9 +106,13 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: #1B1B23;
             border-radius: 50%;
             cursor: pointer;
+            background-color: #fff;
+            
+            &.dark {
+                background-color: #1B1B23;
+            }
 
             svg {
                 width: 23px;

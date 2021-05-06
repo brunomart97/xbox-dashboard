@@ -2,6 +2,11 @@
     grid-area: CT;
     display: flex;
     padding: 0 40px 40px 40px;
+    background: #EEEEEE;
+    
+    &.dark {
+        background: #20232C;
+    }
 
     .top {
         width: 100%;

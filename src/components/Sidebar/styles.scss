@@ -1,114 +1,142 @@
-.sidebar {
+.backSidebar {
     grid-area: SB;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 40px;
-    border-radius: 0 30px 30px 0;
-    background-color: #1B1B23;
+    width: 100%;
+    height: 100vh;
+    background-color: #EEEEEE;
 
-    .top {
+    &.dark {
+        background-color: #20232C;
+    }
+    
+    .sidebar {
         width: 100%;
-        height: auto;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 40px;
+        border-radius: 0 30px 30px 0;
+        background-color: #FFFFFF;
 
-        .logo {
+        &.dark {
+            background-color: #1B1B23;
+        }
+    
+        .top {
             width: 100%;
-            height: 90px;
-            display: flex;
-            justify-content: flex-start;
-            align-items: flex-start;
-
-            svg {
-                width: 40px;
-                height: 40px;
-                color: #fff;
-                cursor: pointer;
-                transition: .3s;
-
-                &:hover {
-                    color: #36AC00;
+            height: auto;
+    
+            .logo {
+                width: 100%;
+                height: 90px;
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+                color: #000;
+    
+                svg {
+                    width: 40px;
+                    height: 40px;
+                    cursor: pointer;
+                    transition: .3s;
+                    
+                    &:hover {
+                        color: #36AC00;
+                    }
+                }
+                
+                &.dark {
+                    color: #fff;
+                }
+            }
+    
+            .menu {
+                width: 100%;
+                height: 220px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+    
+                button {
+                    width: 100%;
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 14px;
+                    color: #899098;
+                    background-color: transparent;
+                    border: none;
+                    padding: 5px 15px;
+                    text-align: start;
+                    border-radius: 10px;
+                    cursor: pointer;
+    
+                    svg {
+                        width: 20px;
+                        height: 20px;
+                        margin-right: 15px;
+                    }
+    
+                    &.active {
+                        background-image: linear-gradient(to right, #039600 , #6CC400);
+                        color: #fff;
+                    }
                 }
             }
         }
-
-        .menu {
+    
+        .cardFooter {
             width: 100%;
             height: 220px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             align-items: center;
-
-            button {
-                width: 100%;
-                height: 40px;
-                display: flex;
-                align-items: center;
-                font-family: 'Poppins', sans-serif;
+            border-radius: 10px;
+            padding: 15px;
+            background-color: #EEEEEE;
+            color: #fff;
+            
+            h3 {
                 font-size: 14px;
+                font-weight: 300;
+                color: #000;
+            }
+            
+            p {
+                font-size: 10px;
                 color: #899098;
-                background-color: #1B1B23;
+            }
+            
+            img {
+                width: 130px;
+                height: 130px;
+                margin-top: -25px;
+            }
+            
+            button {
+                width: 90%;
+                height: 32px;
+                font-family: 'Poppins', sans-serif;
+                font-size: 12px;
+                background-image: linear-gradient(to right, #039600 , #6CC400);
+                color: #fff;
                 border: none;
                 padding: 5px 15px;
-                text-align: start;
+                text-align: center;
                 border-radius: 10px;
                 cursor: pointer;
+            }
 
-                svg {
-                    width: 20px;
-                    height: 20px;
-                    margin-right: 15px;
-                }
+            &.dark {
+                background-color: #272731;
 
-                &.active {
-                    background-image: linear-gradient(to right, #039600 , #6CC400);
+                h3 {
                     color: #fff;
                 }
             }
-        }
-    }
-
-    .cardFooter {
-        width: 100%;
-        height: 220px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        color: #fff;
-        background-color: #272731;
-        border-radius: 10px;
-        padding: 15px;
-        
-        h3 {
-            font-size: 14px;
-            font-weight: 300;
-            color: #fff;
-        }
-        
-        p {
-            font-size: 10px;
-            color: #899098;
-        }
-
-        img {
-            width: 130px;
-            height: 130px;
-            margin-top: -25px;
-        }
-        
-        button {
-            width: 90%;
-            height: 32px;
-            font-family: 'Poppins', sans-serif;
-            font-size: 12px;
-            background-image: linear-gradient(to right, #039600 , #6CC400);
-            color: #fff;
-            border: none;
-            padding: 5px 15px;
-            text-align: center;
-            border-radius: 10px;
-            cursor: pointer;
         }
     }
 }
