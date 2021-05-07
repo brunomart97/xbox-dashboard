@@ -65,7 +65,27 @@ export default function Content({ darkTheme }) {
                 <div className="chart">
                     <h3 className={darkTheme && 'dark'}>Weekly Statistics</h3>
                     <div className={`boxChart ${darkTheme && 'dark'}`}>
-                        
+                        <ResponsiveContainer width="100%" height="100%">
+                            <LineChart
+                                width={250}
+                                height={195}
+                                data={data}
+                                margin={{
+                                    top: 20,
+                                    right: 20,
+                                    left: 20,
+                                    bottom: 20,
+                                }}
+                            >
+                                <CartesianGrid strokeDasharray="2 3" />
+                                <Line
+                                    type="monotone"
+                                    dataKey="players"
+                                    stroke="#40AD02"
+                                    activeDot={{ r: 7 }}
+                                />
+                            </LineChart>
+                        </ResponsiveContainer>
                     </div>
                 </div>
             </div>
