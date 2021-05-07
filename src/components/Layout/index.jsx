@@ -18,10 +18,12 @@ export default function Layout() {
             <Sidebar 
                 darkTheme={darkTheme}
             />
+
             <Header
                 changeTheme={changeTheme}
                 darkTheme={darkTheme}
             />
+            
             <Content
                 darkTheme={darkTheme}
             />
